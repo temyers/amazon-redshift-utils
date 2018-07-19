@@ -282,6 +282,7 @@ class TableResource(SchemaResource):
                    gzip 
                    null as 'NULL_STRING__'
                    {explicit_ids}
+                   timeformat 'YYYY-MM-DD HH:MI:SS'
                    delimiter '^' removequotes escape compupdate off """
 
     drop_table_stmt = """DROP TABLE {schema_name}.{table_name}"""
